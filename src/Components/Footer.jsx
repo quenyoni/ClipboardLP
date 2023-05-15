@@ -28,7 +28,7 @@ const Footer = () => {
   ]
 
   const link = icos.map((el,index) => {
-    return (<a className='links'  key={index} href={el.url}><FontAwesomeIcon icon={el.thing} size="1x" /></a>)
+    return (<a className='links'  key={index} href={el.url}><FontAwesomeIcon icon={el.thing} size="2x" /></a>)
   })
 
   const lnk = links.map((el,index) => {
@@ -50,12 +50,15 @@ const Footer = () => {
 
        
         <img className='main-logo2' src={logo2} alt="" />
-          {lnk}
           
-          <div className="">
+          <div className="footer-grid">
+          {lnk}
             
+          </div>
+          <div className="move">
+
         {link}
-         </div>
+          </div>
         </div>
 
       </div>
