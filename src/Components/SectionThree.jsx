@@ -11,7 +11,7 @@ const SectionThree = () => {
         Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks
         </p>
 
-        <img src={deviceImg} alt="" />
+        <img data-aos="fade-up" src={deviceImg} alt="" />
 
 
 

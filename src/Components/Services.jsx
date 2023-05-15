@@ -9,19 +9,22 @@ const Services = () => {
       id: 1,
       title: 'Create blacklists',
       data: 'Ensure sensitive  information never makes its way to your clipboard by excluding certain sources.',
-      img:blacklist
+      img: blacklist,
+      duration:1000
     },
     {
       id: 2,
       title: 'Plain text snippets',
       data: 'Remove unwanted formatting from copied text for a consistent look.',
-      img:snippet
+      img: snippet,
+      duration:2000
   },
     {
       id: 3,
       title: 'Sneaker preview',
       data: 'Quick preview of all snippet on your Clipboard for easy access',
-      img:preview
+      img: preview,
+      duration:3000
   }
 ]
 
@@ -32,7 +35,8 @@ const Services = () => {
     {
       serve.map(item => {
         return (
-          <div className='grid-item' key={item.id}>
+          <div data-aos="fade-up"
+     data-aos-duration={item.duration} className='grid-item' key={item.id}>
             <img src={item.img} alt="" />
             <h3 className='sub-heading'>{item.title}</h3>
             <p className='para'>{item.data}</p>

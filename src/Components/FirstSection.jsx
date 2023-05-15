@@ -15,7 +15,7 @@ const FirstSection = () => {
         <div className="benefits">
           <div className="comp">
 
-          <img className='computer' src={comp} alt="" />
+          <img data-aos="fade-right" className='computer' src={comp} alt="" />
           </div>
           <Benefits/>
 

@@ -1,6 +1,29 @@
 import logo from "../assets/images/logo.svg";
+import { useEffect } from "react";
+
 
 const Hero = () => {
+
+
+	useEffect(() => {
+		const handleLoad = () => {
+			const  log = document.querySelector('.main-logo')
+			console.log(log.classList.add('rotate'))
+		};
+	
+		window.addEventListener('load', handleLoad);
+	
+		// Clean up the event listener on component unmount
+		return () => {
+			window.removeEventListener('load', handleLoad);
+		};
+	}, []);
+
+
+
+
+
+
 	return (
 		<header className="header">
 			<div className="container">

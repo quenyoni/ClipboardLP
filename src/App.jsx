@@ -8,8 +8,16 @@ import Footer from "./Components/Footer";
 import "./App.css";
 import SectionFive from "./Components/SectionFive";
 import SectionSix from "./Components/SectionSix";
+import { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 
 function App() {
+   useEffect(() => {
+      AOS.init();
+   }, [])
+   
 	return (
 		<>
       <Hero />
