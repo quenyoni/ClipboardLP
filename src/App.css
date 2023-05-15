@@ -144,7 +144,7 @@ body {
 
 .para {
 	text-align: center;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	line-height: 1.7;
 	color: var(--GrayishBlue);
 	max-width: 550px;
@@ -251,14 +251,16 @@ color: var(--StrongCyan);
 	.comp {
 		position: relative;
 		margin-bottom: 2rem;
+		
 	
 		
 	}
 
 	.computer {
 		position: absolute;
-		width: 150%;
-		right:30%;
+		
+		min-width: 140%;
+		left:-70%;
 		
 	
 	}
